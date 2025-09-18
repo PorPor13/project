@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
   const images = [
-    { src: "/src/components/imgs/About.jpg", alt: "Confidence, trust, civility" },
-    { src: "/src/components/img/Cambodia_provinces_Khmer_Lang.png", alt: "Luxury Boy Bag Variant" },
+    { src: "/public/img/About.jpg", alt: "Confidence, trust, civility" },
+    { src: "/public/img/About1.jpg", alt: "Luxury Boy Bag Variant" },
   ];
 
   return (
