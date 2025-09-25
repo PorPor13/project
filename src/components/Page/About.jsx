@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
   const images = [
-    { src: "/public/img/About.jpg", alt: "Confidence, trust, civility" },
-    { src: "/public/img/About1.jpg", alt: "Luxury Boy Bag Variant" },
+    { src: "/img3/About.jpg", alt: "Confidence, trust, civility" },
+    { src: "/img3/About1.jpg", alt: "Luxury Boy Bag Variant" },
   ];
 
   return (
@@ -21,7 +21,9 @@ function About() {
               alt={images[0].alt}
               className="w-full rounded-xl shadow-xl transform hover:scale-[1.02] transition-all duration-500 ease-in-out"
             />
-            <p className="text-center text-lg font-medium text-gray-800 mt-2 dark:text-gray-300">{images[0].alt}</p>
+            <p className="text-center text-lg font-medium text-gray-800 mt-2 dark:text-gray-300">
+              {images[0].alt}
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 text-center tracking-tight drop-shadow-md dark:text-blue-300">
@@ -30,11 +32,12 @@ function About() {
             </h2>
           </div>
         </div>
-        
       </div>
+
+      {/* Section with image + features */}
       <section className="flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-8 mx-4 sm:mx-8 lg:mx-20">
         <img
-          src="/src/components/imgs/About1.jpg"
+          src={images[1].src}
           alt="Fashion model wearing a black and white sweater and jeans"
           className="w-full lg:w-1/3 rounded-lg shadow-lg"
         />
@@ -44,7 +47,6 @@ function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-12 gap-y-4 max-w-4xl mx-auto">
             {/* Feature 1 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-             
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   Newest Products
@@ -57,7 +59,6 @@ function About() {
 
             {/* Feature 2 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-              
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   Free Shipping
@@ -70,7 +71,6 @@ function About() {
 
             {/* Feature 3 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-              
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   100% Return Guarantee
@@ -83,7 +83,6 @@ function About() {
 
             {/* Feature 4 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-              
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   Original Brands
@@ -96,7 +95,6 @@ function About() {
 
             {/* Feature 5 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-              
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   Live Support
@@ -109,7 +107,6 @@ function About() {
 
             {/* Feature 6 */}
             <div className="group flex items-center p-4 cursor-pointer hover:-translate-y-1 transition-transform duration-200 ease-in-out">
-              
               <div className="flex flex-col">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800 whitespace-nowrap group-hover:text-blue-600 dark:text-gray-200">
                   Warranty Replace
@@ -121,9 +118,7 @@ function About() {
             </div>
             
           </div>
-          
         </div>
-        
       </section>
     </div>
   );
